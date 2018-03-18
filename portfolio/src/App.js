@@ -24,7 +24,7 @@ class App extends Component {
 
          <MuiThemeProvider>
             <Nav/>
-            <ProjectCard/>
+            {/* <ProjectCard/> */}
          </MuiThemeProvider>
       </div>
     );

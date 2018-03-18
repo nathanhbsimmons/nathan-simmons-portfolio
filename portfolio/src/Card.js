@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-
+import logo from './logo.png';
 class ProjectCard extends Component {
 
 
@@ -10,21 +10,25 @@ class ProjectCard extends Component {
       width: '300px',
       height: '300px'
     }
+    const overlayStyle ={
+      height: '268px'
+    }
     return (
-      <div style={cardStyle}>
-      <Card >
-        <CardHeader
+
+      <Card style={cardStyle}>
+        {/* <CardHeader
           title="URL Avatar"
           subtitle="Subtitle"
           avatar="images/jsa-128.jpg"
-        />
+        /> */}
         <CardMedia
-          overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+
+            overlay={<CardTitle  style={overlayStyle} title="Overlay title" />}
           >
-            <img src="images/nature-600-337.jpg" alt="" />
+            <img src={logo} alt="" />
           </CardMedia>
           {/* <CardTitle title="Card title" subtitle="Card subtitle" /> */}
-          <CardText>
+          {/* <CardText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
             Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -33,9 +37,9 @@ class ProjectCard extends Component {
           <CardActions>
             <FlatButton label="Action1" />
             <FlatButton label="Action2" />
-          </CardActions>
+          </CardActions> */}
         </Card>
-        </div>
+        
     )
   }
 
