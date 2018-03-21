@@ -16,11 +16,14 @@ h1 {
 .App-header {
   background-color: #222;
   height: 150px;
-  padding: 20px;
+  /* padding: 20px; */
+  /* margin: 10px; */
+  margin-bottom: 20px;
   color: white;
 }
 
 .App-title {
+
   font-size: 1.5em;
 }
 
@@ -52,6 +55,7 @@ section {
 }
 
 .filter {
+  height: 260px;
   position: absolute;
   left: 0;
   top: 0;

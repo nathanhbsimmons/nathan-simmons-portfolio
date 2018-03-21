@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import Flexbox from 'flexbox-react';
 import logo from './logo.png';
 
 
 const styles = {
   cardStyle: {
-    width: '260px',
-    height: '260px',
+    width: 260,
+    maxHeight: 260
+
   },
   overlayStyle: {
     width: '260px',
@@ -22,10 +22,12 @@ class ProjectCard extends Component {
   render () {
 
     return (
-      <div>
+
+
+        <Flexbox flexDirection="row" justifyContent="space-around">
         {this.props.projects.map((projectObj, i)=>{
-          return (<div style={styles.cardStyle}>
-            <a href={projectObj.url} target="_blank">
+          return (
+            <a  href={projectObj.url} target="_blank">
               <article className="panel">
                 <img src={projectObj.img} style={styles.overlayStyle}/>
                 <section className="info">
@@ -35,9 +37,11 @@ class ProjectCard extends Component {
                 </section>
               </article>
             </a>
-          </div>)
+
+          )
         })}
-      </div>
+      </Flexbox>
+
     )
   }
 

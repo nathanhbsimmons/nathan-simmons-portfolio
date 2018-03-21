@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
-import ProjectCard from './Card.js'
+import Flexbox from 'flexbox-react';
+import ProjectCard from './Card.js';
 import restPic from './restdemo2.png';
+import checkers from './checkers.png';
+import guitar from './guitarPlayer.png'
 
 const styles = {
   headline: {
@@ -15,10 +18,8 @@ const styles = {
     padding: 10
   },
   header: {
-
     width: '90%',
     margin: 'auto',
-
   },
   border: {
     height: 46,
@@ -27,11 +28,10 @@ const styles = {
     background: 'ghostwhite'
   },
   bodyContainer: {
-    padding: 10,
+    maxHeight: 300,
+    padding: 40,
     width: '90%',
     margin: 'auto',
-    display: 'flex',
-    justifyContent: 'spaceBetween'
   },
   navContainer: {
     display: 'flex',
@@ -50,6 +50,12 @@ class Nav extends Component {
         {title: 'Rest Demo',
           url: 'https://nathanhbsimmons.github.io/checkpoints/cpoint1/cpoint1.html',
           img: restPic},
+        {title: 'Node Checkers',
+          url: 'https://github.com/nathanhbsimmons/javascript-workbook/blob/gh-pages/05week/checkers.js',
+          img: checkers},
+        {title: 'Clicker Game',
+          url: 'https://nathanhbsimmons.github.io/nathanhbsimmons.github.io/checkpoints/cpoint3/index.html',
+          img: guitar}
       ],
       slideIndex: 0
     };
@@ -75,12 +81,17 @@ class Nav extends Component {
 
         <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
           <div style={styles.bodyContainer}>
-            <ProjectCard projects={this.state.projects}/>
+
+            <ProjectCard  projects={this.state.projects}/>
+
+
 
           </div>
+
           <div style={styles.bodyContainer}>
             <p>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
           </div>
+
           <div style={styles.slide}>
             slide n°3
           </div>
