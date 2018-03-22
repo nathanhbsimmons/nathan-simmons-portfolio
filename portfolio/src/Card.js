@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Flexbox from 'flexbox-react';
-import logo from './logo.png';
+
 
 
 const styles = {
@@ -27,7 +27,7 @@ class ProjectCard extends Component {
         <Flexbox flexDirection="row" justifyContent="space-around">
         {this.props.projects.map((projectObj, i)=>{
           return (
-            <a  href={projectObj.url} target="_blank">
+            <a key={i} href={projectObj.url} target="_blank">
               <article className="panel">
                 <img src={projectObj.img} style={styles.overlayStyle}/>
                 <section className="info">

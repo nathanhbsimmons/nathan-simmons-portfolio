@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 h1 {
   font-family: 'PT Sans Narrow', sans-serif;
@@ -38,6 +39,7 @@ a:focus {
 }
 
 a {
+  text-decoration: none;
   color: #02BEC4;
   font-size: 22px;
   display: inline-block;
@@ -97,6 +99,11 @@ section {
 .panel:hover .filter {
   background-color: rgba(28, 28, 26, 0.72);
   opacity: 0.8;
+}
+
+.social {
+  font-weight: lighter;
+
 }
 
 

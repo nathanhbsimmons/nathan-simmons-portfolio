@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import logo from './logo.png';
+import CrossfadeImage from 'react-crossfade-image'
+
+
 
 const styles = {
   header: {
@@ -8,10 +10,12 @@ const styles = {
     height: '30vh'
   },
   logo: {
-    marginTop: 0,
-    marginBottom: -10,
-    height: '25vh'
+    paddingTop: 5,
+    margin: 'auto',
+    height: '25vh',
+    borderRadius: '50%',
   },
+
   title: {
     color: '#EF5743',
     fontSize: 50,
@@ -26,7 +30,8 @@ class Header extends Component {
   render() {
     return (
       <header style={styles.header} className="App-header">
-        <img src={logo} style={styles.logo} alt="logo"/>
+        <CrossfadeImage style={styles.logo} src={this.props.fade} />
+
         <h1 style={styles.title} className="App-title">NATHAN SIMMONS</h1>
       </header>
 

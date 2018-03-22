@@ -3,10 +3,7 @@ import Flexbox from 'flexbox-react';
 import './App.css';
 
 const styles = {
-  // footerContainer: {
-  //     display: 'flex',
-  //     justifyContent: 'spaceBetween',
-  // },
+
   border: {
     height: 46,
     width: '40%',
@@ -21,7 +18,9 @@ class Footer extends Component {
     return (
       <Flexbox flexDirection="row" justifyContent="space-between">
       <div style={styles.border}></div>
-        <p>ggg</p>
+      <a href="https://www.linkedin.com/in/nathan-simmons-114b5695/" target="_blank" className="fa fa-linkedin fa-lg"></a>
+      <a  href="https://github.com/nathanhbsimmons" target="_blank" className="fa fa-github fa-lg"></a>
+
       <div style={styles.border}></div>
     </Flexbox>
 
