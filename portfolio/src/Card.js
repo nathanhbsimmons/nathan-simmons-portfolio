@@ -24,12 +24,12 @@ class ProjectCard extends Component {
     return (
 
 
-        <Flexbox flexDirection="row" justifyContent="space-around">
+      <Flexbox flexDirection="row" justifyContent="space-around">
         {this.props.projects.map((projectObj, i)=>{
           return (
-            <a key={i} href={projectObj.url} target="_blank">
+            <a key={i} href={projectObj.url} target="_blank" rel="noopener noreferrer">
               <article className="panel">
-                <img src={projectObj.img} style={styles.overlayStyle}/>
+                <img src={projectObj.img} style={styles.overlayStyle} alt={projectObj.title}/>
                 <section className="info">
                   {projectObj.title}
                 </section>

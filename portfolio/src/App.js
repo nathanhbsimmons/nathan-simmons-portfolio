@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import fetch from 'unfetch';
+// import fetch from 'unfetch';
 import Nav from './Nav.js'
 import Header from './Header.js'
 import Footer from './Footer.js'
-import restPic from './restdemo2.png';
-import checkers from './checkers.png';
+import Quote from './Quote.js'
+import restPic from './restdemo2.png'
+import checkers from './checkers.png'
 import guitar from './guitarPlayer.png'
 import logoCrop from './logoCrop.png'
 import profile from './profile.png'
@@ -32,26 +33,26 @@ class App extends Component {
       slideIndex: 0,
       isLoaded: false,
       error: null,
-      joke:'',
+      joke:[],
       fade: logoCrop,
     };
   }
 
   componentDidMount() {
-    console.log('mount')
-   fetch("https://icanhazdadjoke.com/",
 
-   {method: "GET", headers: "Accept: text/plain"}
-  )
+   fetch('http://ron-swanson-quotes.herokuapp.com/v2/quotes'
+     )
      .then(res => res.json())
      .then(
 
-       (result) => {
-           console.log(result)
+       (res) => {
+
          this.setState({
+
            isLoaded: true,
-           joke: result
+           joke: res
          });
+
        },
        // Note: it's important to handle errors here
        // instead of a catch() block so that we don't swallow
@@ -63,6 +64,7 @@ class App extends Component {
          });
        }
      )
+
   }
 
 
@@ -84,14 +86,18 @@ class App extends Component {
 
       <MuiThemeProvider>
         <Header fade={this.state.fade}/>
-        </MuiThemeProvider>
+      </MuiThemeProvider>
 
-          <MuiThemeProvider>
+      <MuiThemeProvider>
         <Nav projects={this.state.projects} handleChange={(value)=>{this.handleChange(value)}} slideIndex={this.state.slideIndex}/>
-        </MuiThemeProvider>
+      </MuiThemeProvider>
 
-          <MuiThemeProvider>
+      <MuiThemeProvider>
         <Footer/>
+      </MuiThemeProvider>
+
+      <MuiThemeProvider>
+        <Quote joke={this.state.joke}/>
       </MuiThemeProvider>
 
     </div>);
