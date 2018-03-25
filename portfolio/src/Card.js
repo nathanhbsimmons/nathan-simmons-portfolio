@@ -8,7 +8,6 @@ const styles = {
   cardStyle: {
     width: 260,
     maxHeight: 260
-
   },
   overlayStyle: {
     width: '260px',
@@ -37,14 +36,11 @@ class ProjectCard extends Component {
                 </section>
               </article>
             </a>
-
           )
         })}
       </Flexbox>
-
     )
   }
-
 }
 
 

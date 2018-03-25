@@ -4,7 +4,7 @@ import './App.css';
 
 const styles = {
   text: {
-    color: '#EF5743',
+    color: '#eda89e',
   }
 }
 
