@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
+import Contact from './Contact.js'
 import ProjectCard from './Card.js';
 
 const styles = {
@@ -37,7 +38,8 @@ const styles = {
   navTabs: {
     background: 'ghostwhite',
     color: '#02BEC4'
-  }
+  },
+
 };
 
 class Nav extends Component {
@@ -70,7 +72,9 @@ class Nav extends Component {
           <p>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
         </div>
 
-        <div style={styles.slide}></div>
+        <div style={styles.slide}>
+            <Contact/>
+        </div>
       </SwipeableViews>
     </div>);
   }

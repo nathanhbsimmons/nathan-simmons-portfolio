@@ -18,6 +18,7 @@ class Footer extends Component {
     return (
     <Flexbox flexDirection="row" justifyContent="space-between">
       <div style={styles.border}></div>
+
       <a href="https://www.linkedin.com/in/nathan-simmons-114b5695/"
       target="_blank" rel="noopener noreferrer"
       className="social fa fa-linkedin fa-lg" alt='linkedin logo'> </a>
