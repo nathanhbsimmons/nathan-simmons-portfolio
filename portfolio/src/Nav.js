@@ -39,6 +39,9 @@ const styles = {
     background: 'ghostwhite',
     color: '#02BEC4'
   },
+  p: {
+    fontSize: 30
+  }
 
 };
 
@@ -69,7 +72,7 @@ class Nav extends Component {
         </div>
 
         <div style={styles.bodyContainer}>
-          <p>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
+          <p style={styles.p}>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
         </div>
 
         <div style={styles.slide}>
