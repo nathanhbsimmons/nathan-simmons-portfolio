@@ -21,7 +21,7 @@ class App extends Component {
           img: restPic
         }, {
           title: 'Node Checkers',
-          url: 'https://github.com/nathanhbsimmons/javascript-workbook/blob/gh-pages/05week/checkers.js',
+          url: 'https://www.npmjs.com/package/nodecheckers',
           img: checkers
         }, {
           title: 'Clicker Game',
