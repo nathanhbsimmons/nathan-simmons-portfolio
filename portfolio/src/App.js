@@ -9,6 +9,7 @@ import checkers from './checkers.png'
 import guitar from './guitarPlayer.png'
 import logoCrop from './logoCrop.png'
 import profile from './profile.png'
+import map from './map.png'
 
 class App extends Component {
   constructor(props) {
@@ -16,10 +17,6 @@ class App extends Component {
     this.state = {
       projects: [
         {
-          title: 'Rest Demo',
-          url: 'https://nathanhbsimmons.github.io/checkpoints/cpoint1/cpoint1.html',
-          img: restPic
-        }, {
           title: 'Node Checkers',
           url: 'https://www.npmjs.com/package/nodecheckers',
           img: checkers
@@ -27,7 +24,11 @@ class App extends Component {
           title: 'Clicker Game',
           url: 'https://nathanhbsimmons.github.io/nathanhbsimmons.github.io/checkpoints/cpoint3/index.html',
           img: guitar
-        }
+        }, {
+          title: 'Swimming Hole App',
+          url: 'https://github.com/nathanhbsimmons/finalproject/blob/master/swimmingholeapp/src/App.js',
+          img: map
+        } 
       ],
       slideIndex: 0,
       isLoaded: false,
