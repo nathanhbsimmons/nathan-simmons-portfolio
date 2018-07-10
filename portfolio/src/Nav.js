@@ -3,6 +3,8 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import Contact from './Contact.js'
 import ProjectCard from './Card.js';
+import Flexbox from 'flexbox-react';
+import './App.css';
 
 const styles = {
   headline: {
@@ -28,6 +30,7 @@ const styles = {
   },
   bodyContainer: {
     maxHeight: 300,
+    minHeight: 200,
     padding: 40,
     width: '90%',
     margin: 'auto'
@@ -66,16 +69,17 @@ class Nav extends Component {
 
       <SwipeableViews index={this.props.slideIndex}
         onChangeIndex={(value) => {this.props.handleChange(value)}}>
-
-        <div style={styles.bodyContainer}>
+       
+        <div className="flexbox" style={styles.bodyContainer}>
           <ProjectCard projects={this.props.projects}/>
         </div>
+      
 
-        <div style={styles.bodyContainer}>
+        <div className="flexbox" style={styles.bodyContainer}>
           <p style={styles.p}>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
         </div>
 
-        <div style={styles.slide}>
+        <div className="flexbox" style={styles.slide}>
             <Contact/>
         </div>
       </SwipeableViews>

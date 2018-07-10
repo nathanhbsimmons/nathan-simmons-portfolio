@@ -10,12 +10,18 @@ import guitar from './guitarPlayer.png'
 import logoCrop from './logoCrop.png'
 import profile from './profile.png'
 import map from './map.png'
+import currents from './waterIconLetterTwoToneDark.png'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       projects: [
+        {
+          title: 'Austin Currents',
+          url: 'http://austincurrents.com/',
+          img: currents
+        }, 
         {
           title: 'Node Checkers',
           url: 'https://www.npmjs.com/package/nodecheckers',
@@ -24,11 +30,7 @@ class App extends Component {
           title: 'Clicker Game',
           url: 'https://nathanhbsimmons.github.io/nathanhbsimmons.github.io/checkpoints/cpoint3/index.html',
           img: guitar
-        }, {
-          title: 'Swimming Hole App',
-          url: 'https://github.com/nathanhbsimmons/finalproject/blob/master/swimmingholeapp/src/App.js',
-          img: map
-        } 
+        }, 
       ],
       slideIndex: 0,
       isLoaded: false,

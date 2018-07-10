@@ -5,6 +5,7 @@ import IconButton from 'material-ui/IconButton';
 import Mailbox from 'material-ui/svg-icons/action/markunread-mailbox';
 import Work from 'material-ui/svg-icons/action/work';
 import {deepOrange800, tealA700} from 'material-ui/styles/colors';
+import resume from './NathanSimmons.pdf'
 
 const styles = {
   buttonStyles: {
@@ -34,9 +35,12 @@ class Contact extends Component {
         <h1 style={styles.header}>EMAIL</h1>
       </Flexbox>
       <Flexbox flexDirection="column">
-        <IconButton href="resume.pdf" download style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="SVG Icon">
-          <Work color={deepOrange800} hoverColor={tealA700}><h1 style={styles.header}>RESUME</h1></Work>
-        </IconButton>
+      
+      <IconButton style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="SVG Icon" href={resume} download>
+      <Work color={deepOrange800} hoverColor={tealA700}><h1 style={styles.header}>RESUME</h1></Work>
+    </IconButton>
+  
+        
         <h1 style={styles.header}>RESUME</h1>
       </Flexbox>
     </Flexbox>);
