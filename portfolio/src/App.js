@@ -23,7 +23,7 @@ class App extends Component {
           img: currents
         }, 
         {
-          title: 'Node Checkers',
+          title: 'Checkers Game (Node.js)',
           url: 'https://www.npmjs.com/package/nodecheckers',
           img: checkers
         }, {

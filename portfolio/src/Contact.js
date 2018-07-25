@@ -29,14 +29,14 @@ class Contact extends Component {
   render() {
     return (<Flexbox flexDirection="row" justifyContent="space-around">
       <Flexbox flexDirection="column">
-        <IconButton href="mailto:nathanhbsimmons@gmail.com" style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="SVG Icon">
+        <IconButton href="mailto:nathanhbsimmons@gmail.com" style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="Email">
           <Mailbox color={deepOrange800} hoverColor={tealA700}></Mailbox>
         </IconButton>
         <h1 style={styles.header}>EMAIL</h1>
       </Flexbox>
       <Flexbox flexDirection="column">
       
-      <IconButton style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="SVG Icon" href={resume} download>
+      <IconButton style={styles.buttonStyles} iconStyle={styles.iconStyles} tooltip="Resume" href={resume} download>
       <Work color={deepOrange800} hoverColor={tealA700}><h1 style={styles.header}>RESUME</h1></Work>
     </IconButton>
   
