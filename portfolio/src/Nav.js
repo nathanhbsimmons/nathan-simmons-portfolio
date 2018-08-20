@@ -67,19 +67,19 @@ class Nav extends Component {
 
       </div>
 
-      <SwipeableViews index={this.props.slideIndex}
+      <SwipeableViews   index={this.props.slideIndex}
         onChangeIndex={(value) => {this.props.handleChange(value)}}>
        
-        <div className="flexbox" style={styles.bodyContainer}>
+        <div style={styles.bodyContainer}>
           <ProjectCard projects={this.props.projects}/>
         </div>
       
 
-        <div className="flexbox" style={styles.bodyContainer}>
+        <div style={styles.bodyContainer}>
           <p style={styles.p}>Nathan Simmons has finally found the outlet he needs to channel his visceral desire to succeed, relentless problem solving skills, passion for creating and general left/right brain cohesion. After years spent in restaurant management and playing music, he is coupling his creativity and artist eye with his experience in daily business operations, people management skills and networking. Powerful and diverse experience, combined with full stack javascript web development training, come together to create a new and unstoppable force in the development world.</p>
         </div>
 
-        <div className="flexbox" style={styles.slide}>
+        <div style={styles.slide}>
             <Contact/>
         </div>
       </SwipeableViews>

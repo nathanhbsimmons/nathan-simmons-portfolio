@@ -11,6 +11,7 @@ import logoCrop from './logoCrop.png'
 import profile from './profile.png'
 import map from './map.png'
 import currents from './waterIconLetterTwoToneDark.png'
+import scroggle from './scroggleSS.png'
 
 class App extends Component {
   constructor(props) {
@@ -18,10 +19,15 @@ class App extends Component {
     this.state = {
       projects: [
         {
-          title: 'Austin Currents',
+          title: 'Austin Currents (React/Redux SPA)',
           url: 'http://austincurrents.com/',
           img: currents
         }, 
+        {
+          title: 'SCROGGLE (React/Redux/Firebase)',
+          url: 'https://words-game-challenge.firebaseapp.com/',
+          img: scroggle
+        },
         {
           title: 'Checkers Game (Node.js)',
           url: 'https://www.npmjs.com/package/nodecheckers',

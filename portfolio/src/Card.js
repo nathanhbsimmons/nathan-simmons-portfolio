@@ -23,8 +23,7 @@ class ProjectCard extends Component {
     return (
 
     
-      <Flexbox className="flexbox" flexDirection="row" justifyContent="space-around">
-      {/*HAVE TO OVERIDE FELXDIRECTION ROW SOMEHOW FOR MOBILE COMPATIBILITY */}
+      <Flexbox  className="flexbox" flexDirection="row" justifyContent="space-around">
         {this.props.projects.map((projectObj, i)=>{
           return (
             <a key={i} href={projectObj.url} target="_blank" rel="noopener noreferrer">

@@ -130,7 +130,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -142,7 +142,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -154,7 +154,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -167,7 +167,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -179,7 +179,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -191,7 +191,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -204,7 +204,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -216,7 +216,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
@@ -228,7 +228,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .flexbox {
-      flex-direction: column;
+      flex-direction: column !important;
       width:80%;
   }
 }
