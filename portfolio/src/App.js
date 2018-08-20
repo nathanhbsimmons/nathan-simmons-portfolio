@@ -24,7 +24,7 @@ class App extends Component {
           img: currents
         }, 
         {
-          title: 'SCROGGLE (React/Redux/Firebase)',
+          title: 'SCROGGLE (Google Firebase)',
           url: 'https://words-game-challenge.firebaseapp.com/',
           img: scroggle
         },
